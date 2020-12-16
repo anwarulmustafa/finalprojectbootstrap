@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!--build:css css/main.css-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->    
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">AL SHAD</a>
+            <div class="collapse navbar-collapse" id = "mynavbar">
+                <ul class="navbar-nav bg-info mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./doyouknow.html">Do you know?</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav bg-info">
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#modallocation"><span class="fa fa-map-marker"> Location</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="00923456300946"><span class="fa fa-phone"></span> 00923456300948</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-------Modal of map-->
+<div class="modal fade" id="modallocation" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h3 class="modal-title">Our Location</h3>
+            </div>
+            <div class="modal-body">
+                <div id="map-container-google-16" class="z-depth-1-half map-container-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.9977124231727!2d74.8842897!3d32.0963475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919540d35397ecd%3A0xf64ed61f0943b333!2sAlshad%20Medical%20Centre!5e0!3m2!1sen!2ssa!4v1608107279270!5m2!1sen!2ssa" 
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer justify-content-center bg-light">
+            <button type="button" class="btn btn-info btn-md" data-dismiss="modal">Close<i class="fa fa-times ml-1"></i></button>
+      </div>
+</div>
+<!-------- Modal -->
+<!----- Jubmbotran --- -->
+<div class="jumbotron" style="background-image: url(./img/aboutus.jpg);">
+    <div class="container">
+        <div class="row justify-content-center row col-sm-6 mr-auto">
+            <h1 class="display-4">Welcome to your Health Center Al Shad</h1>
+        </div>
+        <div class="row col-sm-6 mr-auto">
+            <p class="lead">
+                Al Shad is a multispeciality group of physicians and healthercare providers that use 
+                a team approach to provide area residents with the latest advances in patient and medical
+                research.
+            </p>
+        </div>
+            <div class="row justify-content-center">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="./index.html#frmappointment" role="button">Get Appointments</a>
+                </p>
+            </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-center">
+        <h1 class="display-5">Contact us</h1>
+    </div>
+    <div class="row row-center">
+        <div class="col-sm-6">
+            <div id="map-container-google-16" class="z-depth-1-half map-container-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.9977124231727!2d74.8842897!3d32.0963475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919540d35397ecd%3A0xf64ed61f0943b333!2sAlshad%20Medical%20Centre!5e0!3m2!1sen!2ssa!4v1608107279270!5m2!1sen!2ssa" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>    
+        <div class="col-sm-6">
+            <div class="card border-light">
+                <div class="card-header">
+                    <h3>Email us</h3>
+                </div>
+                <div class="card-body bg-light">
+                   <for>
+                       <div class="form-group">
+                        <label for="txtname">Name</label>
+                        <input type="input" id="txtname" class="form-control" placeholder="Enter your name here">
+                       </div>
+                       <div class="form-group">
+                        <label for="txtemail">Email</label>
+                        <input type="input" id="txtemail" class="form-control" placeholder="Enter your Email">
+                        <div class="form-text text-muted">We'll not share your email with anyone else</div>
+                       </div>
+                       <div class="form-group">
+                        <label for="txtmobile">Mobile</label>
+                        <input type="input" id="txtmobile" class="form-control" placeholder="Enter your mobile here!">
+                        <div class="form-text text-muted">We'll not share your mobile with anyone else!</div>
+                       </div>
+                       <div class="form-group">
+                        <label for="txtmessage">Message</label>
+                        <textarea id="txtmessage" class="form-control" rows="6"></textarea>
+                       </div>
+                       <div class="form-group">
+                        <button type="button" class="btn btn-primary">Send Message</button>
+                       </div>
+                   </form>
+
+                </div>   
+            </div>
+        </div>  
+         
+    </div>
+</div>
+
+
+<!------- Footer-->
+<footer class="page-footer font-small indigo">
+    <div class="container">
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">             
+            <div class="col-sm-6">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a href="./doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a href="./doyouknow.html">Do You Know?</a></li>
+                    <li class="nav-item"><a href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <h5>Our Address</h5>
+                <address>
+                  Al Shad Clinic<br>
+                  Zafer wal Bai Pass, Narowal<br>
+                  Punjab, Pakistan<br>
+                  <i class="fa fa-phone fa-lg"></i> +92 345 6300 948<br>
+                  <i class="fa fa-fax fa-lg"></i> +92 345 6300 948<br>
+                  <i class="fa fa-envelope fa-lg"></i> <a href="mailto:anwar@i-tmw.com">alshad@hotmail.com</a>
+               </address>
+            </div>
+       </div>
+    <div class="row text-center justify-content-center ">
+    <div class="py-5">
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">  <a class="btn-floating btn-gplus mx-1" href="http://google.com/+"><i class="fa fa-google-plus-g fa-lg"></i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-fb max-1" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook-f fa-lg"></i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-li mx-1" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-tw mx-1" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li class="list-inline-item"><a class="btn-floating btn-google mx-1"href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i>YouTube</a></li>
+       
+                </div>
+        </ul>
+    </div>
+    </div>
+       <div class="footer-copyright text-center py-5">             
+                © Copyright Al Shad, Narowal, Pakistan
+       </div>
+    </div>
+</footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<!--build:js js/main.js--> 
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!--endbuild-->
+</body>
+</html>

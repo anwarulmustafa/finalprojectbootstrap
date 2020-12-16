@@ -1,0 +1,37 @@
+{
+  "name": "alshadweb",
+  "version": "1.0.0",
+  "description": "AlShad clinic website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "clean":"rimraf dist",
+    "copyfonts":"copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir=dist/img",
+    "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin doctors.html -d dist --htmlmin -o dist/doctors.html && usemin doyouknow.html -d dist --htmlmin -o dist/doyouknow.html && usemin contactus.html -d dist --htmlmin -o dist/contactus.html",
+    "build":"npm run clean && npm run copyfonts && npm run imagemin && npm run usemin",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anwarulmustafa/Alshadweb.git"
+  },
+  "author": "Anwar ul Mustafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anwarulmustafa/Alshadweb/issues"
+  },
+  "homepage": "https://github.com/anwarulmustafa/Alshadweb#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.12.9",
+    "rimraf": "^3.0.2"
+  }
+}
